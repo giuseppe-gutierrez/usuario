@@ -7,16 +7,12 @@ import com.giuseppe.usuario.infrastructure.entity.Endereco;
 import com.giuseppe.usuario.infrastructure.entity.Telefone;
 import com.giuseppe.usuario.infrastructure.entity.Usuario;
 import lombok.*;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-
+@Component
 public class UsuarioConverter {
 
     public Usuario paraUsuario(UsuarioDTO usuarioDTO){
